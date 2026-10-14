@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Tema shadcn/ui — verde institucional CUJAE (#16a34a = hsl 142 76% 36%) */
+@layer base {
+  :root {
+    --background: 120 14% 97%;
+    --foreground: 144 18% 12%;
+    --card: 0 0% 100%;
+    --card-foreground: 144 18% 12%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 144 18% 12%;
+    --primary: 142 76% 36%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 140 22% 94%;
+    --secondary-foreground: 144 40% 20%;
+    --muted: 140 22% 94%;
+    --muted-foreground: 142 8% 42%;
+    --accent: 141 30% 91%;
+    --accent-foreground: 144 45% 18%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 140 18% 88%;
+    --input: 140 18% 86%;
+    --ring: 142 76% 36%;
+    --radius: 0.5rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Estilos legacy del prototipo (paginas aun no migradas a componentes ui/) */
+@layer components {
+  .card {
+    @apply bg-card text-card-foreground rounded-xl shadow-sm border border-border p-4;
+  }
+
+  .badge {
+    @apply inline-flex items-center px-2 py-0.5 rounded-full text-xs font-semibold;
+  }
+}

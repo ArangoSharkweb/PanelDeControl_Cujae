@@ -1,0 +1,44 @@
+# ============ General (raíz) ============
+# Secrets / entorno — nunca subir
+.env
+.env.*
+!.env.example
+
+# SO / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+
+# Logs
+*.log
+npm-debug.log*
+yarn-error.log*
+
+# ============ Backend (Python) ============
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+dist/
+build/
+
+# ============ Frontend (Next.js / Node) ============
+node_modules/
+.next/
+out/
+coverage/
+tsconfig.tsbuildinfo
+next-env.d.ts
+
+# Vercel (si algún día se despliega)
+.vercel/
